@@ -31,11 +31,11 @@ class Ball extends StatefulWidget {
 }
 
 class _BallState extends State<Ball> {
-  int ballNumber = 0; // Step 4 - Create a variable for ball number
+  int ballNumber = 1; // Step 5 - Create a variable for ball number
 
   void changeBall() {
     setState(() {
-      ballNumber = Random().nextInt(6); // Generates a random number between 0-5
+      ballNumber = Random().nextInt(6) + 1; // Step 5 - Generates a random number between 1-6
       print('ballNumber: $ballNumber');
     });
   }
